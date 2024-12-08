@@ -1,0 +1,1 @@
+This is my first rest api project, where I implemented a small wiki article parser and sending requests to yandex.jpt and combined them into one project. My Api accepts get requests with the "request" and "link" parameters. Where the "link" parameter accepts a link from wikipedia, and "request" accepts your request for this article.
