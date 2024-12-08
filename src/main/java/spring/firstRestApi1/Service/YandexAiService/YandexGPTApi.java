@@ -23,11 +23,11 @@ public class YandexGPTApi {
 
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
-        headers.add("Authorization", "Api-Key AQVN0aKZPUoqzcrp4FMZOPBrspczq0IYm81xi-ie");
-        headers.add("x-folder-id","b1g2kobehfrm0kt9dn4t");
+        headers.add("Authorization", "Api-Key something API-KEY");
+        headers.add("x-folder-id","something folder - id");
 
         YandexRole[] messages = new YandexRole[]{new YandexRole("system",request),new YandexRole("user",text)};
-        YandexJson yandexJson = new YandexJson("gpt://b1g2kobehfrm0kt9dn4t/yandexgpt-lite",completionOptions,messages);
+        YandexJson yandexJson = new YandexJson("gpt://something folder - id/yandexgpt-lite",completionOptions,messages);
 
         ObjectMapper objectMapper = new ObjectMapper();
         String jsonForYandex = objectMapper.writeValueAsString(yandexJson);
